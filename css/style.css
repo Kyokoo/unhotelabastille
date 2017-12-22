@@ -1,6 +1,7 @@
 body {
   width: 100%;
   margin: 0;
+  font-family: souce-sans-pro, sans-serif;
 }
 
 .container{
@@ -8,18 +9,14 @@ body {
   margin: 0 50px 0 50px;
 }
 
-.containerGrey{
-  width: 100% !important;
-  background-color: rgb(238,238,238);
-  display: block;
-  float: left;
-  padding: 30px
-}
+
 
 nav {
   display: block;
   width: 100%;
   height: 100px;
+  font-family: souce-sans-pro, sans-serif;
+  font-weight: 400;
 }
 nav ul{
   float: right;
@@ -47,6 +44,97 @@ nav .highlight a{
   padding: 5px 3px 2px 3px;
 }
 
+
+
+/* Contact */
+.containerWhite {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 800px;
+}
+
+.containerGrey{
+  width: 100%;
+  background-color: rgb(238,238,238);
+  display: block;
+  position: relative;
+  height: 800px;
+  float: left;
+  padding: 30px
+}
+
+.containerBlue {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: rgb(138,204,202);
+  text-align: center;
+  padding: 100px 0 100px 0;
+  height: 800px;
+}
+
+.containerBlue h2 {
+  margin-bottom: 50px;
+}
+
+/* Sliders */
+
+.sliderLeft {
+  display: inline-block;
+  float: left;
+  width: 60%;
+  height: 100%;
+  background-color: LightSalmon;
+  margin-bottom: 100px;
+}
+
+.sliderRight {
+  display: inline-block;
+  float: right;
+  width: 60%;
+  height: 100%;
+  background-color: LightSalmon;
+  margin-bottom: 100px;
+}
+
+.captionRight {
+  display: inline-block;
+  float: right;
+  background-color: white;
+  width: 40%;
+  height: 100%;
+}
+
+.captionRight span {
+  position: absolute;
+  width: 36%;
+  right: 2%;
+  bottom: 20%;
+  text-align: justify;
+}
+
+.captionLeft {
+  display: inline-block;
+  float: left;
+  background-color: white;
+  width: 40%;
+  height: 100%;
+}
+
+.captionLeft span {
+  position: absolute;
+  width: 36%;
+  left: 2%;
+  bottom: 20%;
+  text-align: justify;
+}
+
+.captionRight p {
+}
+
 #logo{
   display: block;
   float: left;
@@ -62,39 +150,18 @@ nav .highlight a{
   display: block;
 }
 
-/* Contact */
-.containerBlue {
-  width: 100%;
-  background-color: rgb(138,204,202);
-  text-align: center;
-  padding: 100px 0 100px 0;
+#hotelDescription, #lesTravaux {
+  display: block;
+  position: relative;
+  margin: 40px;
 }
 
-.containerBlue h2 {
-  margin-bottom: 50px;
+#roomTitle {
+  position: absolute;
+  top: 50px;
+  left: 2%;
+  width: 36%;
 }
-
-/* Sliders */
-
-.sliderLeft {
-  display: inline-block;
-  float: left;
-  width: 70%;
-  height: 500px;
-  background-color: green;
-  margin-bottom: 100px;
-}
-
-.captionRight {
-  display: inline-block;
-  float: right;
-  background-color: red;
-}
-
-.captionRight p {
-}
-
-
 /* Slideshow */
 .slide {
   width: 100%;
