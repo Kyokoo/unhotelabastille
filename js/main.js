@@ -1,18 +1,24 @@
 $(document).ready(function() {
-  var slideshowIndex = 0;
-  slideshow();
-  function slideshow() {
 
-    var i;
-    var x = document.getElementsByClassName("slide");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideshowIndex++;
-    if (slideshowIndex > x.length){
-      slideshowIndex = 1;
-    }
-    x[slideshowIndex - 1].style.display = "block";
-    setTimeout(slideshow, 9000);
-  }
+  var link = $('nav').find('a');
+
+  link.on('click', function(event) {
+    event.preventDefault();
+      hash = this.hash;
+      if (this.hash !== ""){
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+      else {
+
+        $('html,body').animate({
+          scrollTop: 0
+        }, 800, function () {
+          window.location.hash = hash;
+        });
+      }
+  });
 });

@@ -2,25 +2,34 @@ body {
   width: 100%;
   margin: 0;
   font-family: souce-sans-pro, sans-serif;
+
 }
 
-.container{
+section {
   display: block;
-  margin: 0 50px 0 50px;
+  overflow: hidden;
+    padding-top: 60px;
+    background-color: rgb(238,238,238);
 }
-
-
 
 nav {
   display: block;
+  position: fixed;
   width: 100%;
-  height: 100px;
+  height: 60px;
   font-family: souce-sans-pro, sans-serif;
   font-weight: 400;
+  background-color: white;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  z-index: 995;
 }
 nav ul{
+  display: inline-block;
+  position: absolute;
+  right: 10vw;
   float: right;
-  margin-top: 70px;
+  bottom: 0;
 }
 
 nav li {
@@ -46,13 +55,23 @@ nav .highlight a{
 
 
 
-/* Contact */
+.containerMain{
+  display: block;
+  overflow: hidden;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  width: 100%;
+}
+
 .containerWhite {
   display: block;
   position: relative;
   float: left;
   width: 100%;
   height: 800px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: white;
 }
 
 .containerGrey{
@@ -60,7 +79,7 @@ nav .highlight a{
   background-color: rgb(238,238,238);
   display: block;
   position: relative;
-  height: 800px;
+  height: 100vh;
   float: left;
   padding: 30px
 }
@@ -73,7 +92,7 @@ nav .highlight a{
   background-color: rgb(138,204,202);
   text-align: center;
   padding: 100px 0 100px 0;
-  height: 800px;
+  height: 100vh;
 }
 
 .containerBlue h2 {
@@ -141,7 +160,7 @@ nav .highlight a{
 }
 
 #logo img {
-  height: 100px;
+  height: 60px;
   display: block;
 }
 
